@@ -6,4 +6,4 @@
 
 ## Run RabbitMQ Container
 
-`cd ./rabbit-mq && docker-compose -f docker-compose.rabbitmq.yml up -d`
+`cd ./rabbitmq && docker-compose -f docker-compose.rabbitmq.yml up -d`
