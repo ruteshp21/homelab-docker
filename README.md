@@ -15,3 +15,11 @@
 ## Run Postgres Container
 
 `cd ./postgres && docker-compose -f docker-compose.postgres.yml up -d`
+
+## Run MongoDB Container
+
+`cd ./mongodb && docker-compose -f docker-compose.mongodb.yml up -d`
+
+## Run Redis Container
+
+`cd ./redis && docker-compose -f docker-compose.redis.yml up -d`
