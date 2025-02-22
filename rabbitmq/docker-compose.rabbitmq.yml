@@ -1,7 +1,7 @@
 services:
 
-  mq:
-    image: rabbitmq:4.0-management
+  rabbitmq:
+    image: rabbitmq:4.0-management-alpine
     hostname: rabbitmq
     container_name: rabbitmq
     ports:

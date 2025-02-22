@@ -1,0 +1,19 @@
+services:
+  
+  mysql-db:
+    image: mysql:lts
+    hostname: mysqldb
+    container_name: mysqldb
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: "mysql"
+      MYSQL_USER: "mysql"
+      MYSQL_PASSWORD: "password"
+      MYSQL_ROOT_PASSWORD: "root"
+    volumes:
+      - mysql-vol:/var/lib/mysql
+    restart: always
+
+volumes:
+  mysql-vol

@@ -1,0 +1,19 @@
+services:
+
+  postgres-db:
+    image: postgres:16-alpine
+    hostname: postgresdb
+    container_name: postgresdb
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: "postgres"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "password"
+    volumes:
+      - postgres-vol:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  postgres-vol
+
